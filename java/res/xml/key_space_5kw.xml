@@ -27,7 +27,9 @@
             latin:languageSwitchKeyEnabled="true"
         >
             <Key
-                latin:keyStyle="languageSwitchKeyStyle" />
+                latin:keySpec="⋅"
+                latin:keyLabelFlags="hasPopupHint|hasShiftedLetterHint"
+                latin:moreKeys="!text/morekeys_period" />
             <Key
                 latin:keyStyle="spaceKeyStyle"
                 latin:keyWidth="30%p" />
@@ -44,20 +46,17 @@
             <Key
                 latin:keyStyle="zwnjKeyStyle" />
         </case>
-        <case
-            latin:languageSwitchKeyEnabled="true"
-        >
-            <Key
-                latin:keyStyle="languageSwitchKeyStyle" />
+        
+        <!-- languageSwitchKeyEnabled="false" -->
+        <default>
+             <Key
+                latin:keySpec="⋅"
+                latin:keyLabelFlags="hasPopupHint|hasShiftedLetterHint"
+                latin:moreKeys="!text/morekeys_period" />
+                
             <Key
                 latin:keyStyle="spaceKeyStyle"
                 latin:keyWidth="40%p" />
-        </case>
-        <!-- languageSwitchKeyEnabled="false" -->
-        <default>
-            <Key
-                latin:keyStyle="spaceKeyStyle"
-                latin:keyWidth="50%p" />
         </default>
     </switch>
 </merge>
